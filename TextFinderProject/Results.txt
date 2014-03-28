@@ -1,0 +1,269 @@
+
+        ANAL, v1.8 - Code Analysis Program
+  ----------------------------------------------
+       copyright (c) Jim Fawcett, 1992-2011
+           all rights granted to users
+             except right to publish
+
+
+  file path:
+  C:\Users\Varun\Desktop\DistributedObjects\TextFinderProject\TextFinderProject
+
+
+  03/25/2014  04:43:53 PM      2278  FileAnalyzer.cpp
+ ==================================================
+   cyclo lines function name
+     3    27   printMatchedPatterns
+     2    10   convertPatterns2Set
+     6    39   FileAnalyzer::analyzeFile
+
+  03/26/2014  00:34:18 AM       734  FileAnalyzer.h 
+ ==================================================
+   cyclo lines function name
+  - type:   class FileAnalyzer 
+
+  module summary:
+ ================
+  lines of function code: 76
+  lines of code text:     122
+  cyclomatic complexity:  11
+
+  03/12/2014  05:03:47 PM     30687  FileSystem.cpp 
+ ==================================================
+   cyclo lines function name
+     1     1   Block::Block
+     1     4   Block::push_back
+     2     6   operator[]
+     2     6   operator[]
+     1     4   operator==
+     1     4   operator!=
+     1     4   Block::size
+     1     4   File::File
+     3    13   File
+     6    28   File::open
+     4    13   File::getLine
+     6    14   File::putLine
+     8    23   File::getBlock
+     6    15   File::putBlock
+     4    10   File::isGood
+     3     7   File::flush
+     3     7   File::clear
+     3     8   File::close
+     1     4   File::exists
+     1     4   File::copy
+     1     4   File::remove
+     4    14   File::selectFile
+     2     8   FileInfo::FileInfo
+     1     4   FileInfo::good
+     1     4   FileInfo::name
+     1     7   FileInfo::intToString
+     3    15   FileInfo::date
+     1     4   FileInfo::size
+     1     4   FileInfo::isArchive
+     1     4   FileInfo::isCompressed
+     1     4   FileInfo::isDirectory
+     1     4   FileInfo::isEncrypted
+     1     4   FileInfo::isHidden
+     1     4   FileInfo::isNormal
+     1     4   FileInfo::isOffLine
+     1     4   FileInfo::isReadOnly
+     1     4   FileInfo::isSystem
+     1     4   FileInfo::isTemporary
+     1     4   operator<
+     1     4   operator==
+     1     4   operator>
+     1     6   FileInfo::earlier
+     1     6   FileInfo::later
+     1     4   FileInfo::smaller
+     1     4   FileInfo::larger
+     2     7   Path::toLower
+     2     7   Path::toUpper
+     7    33   Path::getName
+     4    16   Path::getExt
+     4    11   Path::getPath
+     1     9   Path::getFullFileSpec
+     4    17   Path::fileSpec
+     4    10   Path::selectPath
+     1     6   Directory::getCurrentDirectory
+     1     4   Directory::setCurrentDirectory
+     4    17   Directory::getFiles
+     4    17   Directory::getDirectories
+     1     4   Directory::create
+     1     7   Directory::exists
+     1     4   Directory::remove
+     1     1   FileSystemSearch::FileSystemSearch
+     1     1   FileSystemSearch
+     1     1   FileSystemSearch::close
+     5    14   FileSystemSearch::firstFile
+     3     7   FileSystemSearch::nextFile
+     5    14   FileSystemSearch::firstDirectory
+     3     7   FileSystemSearch::nextDirectory
+     1     5   title
+    47   314   main
+
+  02/23/2014  03:57:53 PM      8586  FileSystem.h   
+ ==================================================
+   cyclo lines function name
+  - type:   typedef char Byte 
+  - type:   class Block 
+     1     2   Block
+  - type:   class File 
+     1     1   File::name
+  - type:   class FileInfo 
+  - type:   class Path 
+  - type:   class Directory 
+  - type:   class FileSystemSearch 
+
+  module summary:
+ ================
+  lines of function code: 847
+  lines of code text:     1255
+  cyclomatic complexity:  199
+
+  03/26/2014  07:33:18 PM      4100  InputArgumentParser.cpp
+ ==================================================
+   cyclo lines function name
+     2     7   boolean2String
+     2     8   printList
+     1    20   VerboseArgumentsPassed
+     3    22   StoreAllPatterns
+     4    21   scanTextCompFlags
+     3    14   scanTextCompDirPath
+     3    14   scanTextCompFileSearchString
+     3    15   scanTextCompTextSearchString
+     1     4   InputArgumentParser::getFilePatterns
+     1     4   InputArgumentParser::getTextPatterns
+     1     4   InputArgumentParser::getDirectoryPath
+     1     4   InputArgumentParser::getRecursionFlag
+     1     4   InputArgumentParser::getAllPatternsFlag
+     4    29   InputArgumentParser::parseCommandLineArgs2TextCompArguments
+     1     6   InputArgumentParser::displayIllegalArgumentMessage
+
+  03/26/2014  00:37:44 AM      1056  InputArgumentParser.h
+ ==================================================
+   cyclo lines function name
+  - type:   class InputArgumentParser 
+
+  module summary:
+ ================
+  lines of function code: 176
+  lines of code text:     239
+  cyclomatic complexity:  31
+
+  03/26/2014  00:26:13 AM      7353  TextSearchComponent.cpp
+ ==================================================
+   cyclo lines function name
+     1     5   title1
+     2    10   calculateTotalTimeFileAnalysis
+     4    22   displayFilesInfo
+     1    12   mergeVectors
+     2    12   appendRootDirectory
+     3    13   removeCurrentAndPrevDirectory
+     4    22   getAllDirectoriesRecursive
+     1    10   generatePatterns
+     1    16   runFileAnalyzer
+     4    46   filterFiles
+     7    47   TextSearchComponent::search
+     2    33   main
+
+  03/26/2014  02:34:03 PM      1796  TextSearchComponent.h
+ ==================================================
+   cyclo lines function name
+  - type:   class TextSearchComponent : public AbstractTextSearchComponentReferenceCounted 
+     1     5   TextSearchComponent
+     1     4   TextSearchComponent
+     1     4   searchFilesRecursive
+     1     4   searchAllPatterns
+     1     4   getRecursionFlag
+     1     4   getTextPatternSearchCondition
+     1     4   verbose
+
+  module summary:
+ ================
+  lines of function code: 277
+  lines of code text:     377
+  cyclomatic complexity:  39
+
+  03/16/2014  02:31:42 PM       219  TextSearchFactory.cpp
+ ==================================================
+   cyclo lines function name
+     1     4   TextSearchFactory::createTextSearchComponent
+
+  03/16/2014  02:29:55 PM       274  TextSearchFactory.h
+ ==================================================
+   cyclo lines function name
+  - pointer returned from public member function:
+      static AbstractTextSearchComponentReferenceCounted *createTextSearchComponent(); 
+  - type:   class TextSearchFactory 
+
+  module summary:
+ ================
+  lines of function code: 4
+  lines of code text:     21
+  cyclomatic complexity:  1
+
+  03/26/2014  00:33:52 AM      1625  AbstractReferenceCount.h
+ ==================================================
+   cyclo lines function name
+  - type:   template < class T > class AbstractReferenceCount : public T 
+     2     9   AbstractReferenceCount
+     2     7   AbstractReferenceCount
+     2    10   AddRef
+     3    14   Release
+
+  module summary:
+ ================
+  lines of function code: 40
+  lines of code text:     65
+  cyclomatic complexity:  9
+
+  03/26/2014  00:39:35 AM       726  ITextSearchComponent.h
+ ==================================================
+   cyclo lines function name
+  - type:   template < typename R, typename ... A > struct ITextSearchComponent 
+     1     1   ITextSearchComponent
+
+  module summary:
+ ================
+  lines of function code: 1
+  lines of code text:     30
+  cyclomatic complexity:  1
+
+  03/26/2014  00:41:56 AM       745  OS_SLASH.h     
+ ==================================================
+   cyclo lines function name
+
+  module summary:
+ ================
+  lines of function code: 0
+  lines of code text:     18
+  cyclomatic complexity:  0
+
+  03/12/2014  11:00:26 AM         0  ThreadPool.h   
+ ==================================================
+   cyclo lines function name
+
+  module summary:
+ ================
+  lines of function code: 0
+  lines of code text:     0
+  cyclomatic complexity:  0
+
+ =================================================
+          summary statistics - all files:
+ =================================================
+
+[  291, 1421] - total cyclo, total function lines
+[    8,   47] - max cyclo, max function lines (excludes mains)
+    0.204785  - complexity per line
+        2127  - total lines
+
+  functions exceeding cc or line limits: 
+ ----------------------------------------
+    47   314   filesystem.cpp : main
+
+  pointers returned from public member functions: 
+ -------------------------------------------------
+  static AbstractTextSearchComponentReferenceCounted *createTextSearchComponent(); 
+
+

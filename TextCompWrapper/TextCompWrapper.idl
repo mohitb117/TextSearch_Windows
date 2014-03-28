@@ -1,0 +1,42 @@
+// TextCompWrapper.idl : IDL source for TextCompWrapper
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TextCompWrapper.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(C8E6AB01-9AAC-4E51-B047-C245AA080F2C),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ITextCompCOM : IDispatch{
+
+	[id(1)] HRESULT SetSearchPath([in] BSTR SearchPathLocation);
+	[id(2)] HRESULT SetFilePatterns([in] SAFEARRAY(BSTR)* FilePatterns);
+	[id(3)] HRESULT SetTextPatterns([in] SAFEARRAY(BSTR)* TextPatterns);
+
+	[id(4)] HRESULT SetSpecialSearchClause([in] BSTR Recursion, [in] BSTR MatchAllTextPatterns);
+	[id(5)] HRESULT GetQualifyingFileList([out] SAFEARRAY(BSTR)* FileSet);
+	[id(6)] HRESULT InitializeComponent();
+};
+[
+	uuid(4C5B1C3A-F2F5-4627-9B07-0F27A3CEBF4A),
+	version(1.0),
+]
+library TextCompWrapperLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(29CFFBBD-27DC-4D51-BCF5-913B2F1D76F3)		
+	]
+	coclass TextCompCOM
+	{
+		[default] interface ITextCompCOM;
+	};
+};
+

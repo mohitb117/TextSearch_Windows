@@ -1,0 +1,150 @@
+
+        ANAL, v1.8 - Code Analysis Program
+  ----------------------------------------------
+       copyright (c) Jim Fawcett, 1992-2011
+           all rights granted to users
+             except right to publish
+
+
+  file path:
+  C:\Users\Varun\Desktop\DistributedObjects\TextFinderProject\TextCompWrapper
+
+
+  03/16/2014  02:11:23 AM       489  dllmain.cpp    
+ ==================================================
+   cyclo lines function name
+  - global data declaration:
+      CTextCompWrapperModule _AtlModule; 
+     2     9   DllMain
+
+  03/16/2014  02:11:23 AM       341  dllmain.h      
+ ==================================================
+   cyclo lines function name
+  - type:   class CTextCompWrapperModule : public ATL::CAtlDllModuleT < CTextCompWrapperModule > 
+  - global data declaration:
+      extern class CTextCompWrapperModule _AtlModule; 
+
+  module summary:
+ ================
+  lines of function code: 9
+  lines of code text:     30
+  cyclomatic complexity:  2
+
+  03/16/2014  02:11:23 AM       211  stdafx.cpp     
+ ==================================================
+   cyclo lines function name
+
+  03/16/2014  02:11:23 AM       556  stdafx.h       
+ ==================================================
+   cyclo lines function name
+
+  module summary:
+ ================
+  lines of function code: 0
+  lines of code text:     30
+  cyclomatic complexity:  0
+
+  03/26/2014  00:30:39 AM      3818  TextCompCOM.cpp
+ ==================================================
+   cyclo lines function name
+     1     8   convertBSTR2stdSTR
+     1    10   CTextCompCOM::InitializeComponent
+     1     8   CTextCompCOM::SetSearchPath
+     1     7   CTextCompCOM::SetFilePatterns
+     1     6   CTextCompCOM::SetTextPatterns
+     3    29   CTextCompCOM::SetSpecialSearchClause
+     1     6   titleFunc
+     2    10   displayFilesSet
+     5    50   CTextCompCOM::GetQualifyingFileList
+
+  03/26/2014  00:27:40 AM      2479  TextCompCOM.h  
+ ==================================================
+   cyclo lines function name
+  - type:   class ATL_NO_VTABLE CTextCompCOM : public CComObjectRootEx < CComSingleThreadModel >, public CComCoClass < CTextCompCOM, &CLSID_TextCompCOM >, public IDispatchImpl < ITextCompCOM, &IID_ITextCompCOM, &LIBID_TextCompWrapperLib, 1, 0 > 
+     1     4   CTextCompCOM
+     1    16   DECLARE_REGISTRY_RESOURCEID
+     1     3   FinalRelease
+
+  module summary:
+ ================
+  lines of function code: 157
+  lines of code text:     241
+  cyclomatic complexity:  19
+
+  03/16/2014  02:14:21 AM      1096  resource.h     
+ ==================================================
+   cyclo lines function name
+
+  module summary:
+ ================
+  lines of function code: 0
+  lines of code text:     18
+  cyclomatic complexity:  0
+
+  03/16/2014  02:11:23 AM       314  targetver.h    
+ ==================================================
+   cyclo lines function name
+
+  module summary:
+ ================
+  lines of function code: 0
+  lines of code text:     8
+  cyclomatic complexity:  0
+
+  03/16/2014  02:11:23 AM      2042  TextCompWrapper.cpp
+ ==================================================
+   cyclo lines function name
+     2     9   DllCanUnloadNow
+     2     9   DllGetClassObject
+     2    11   DllRegisterServer
+     3    13   DllUnregisterServer
+     5    28   DllInstall
+  - static: szUserSwitch
+
+  module summary:
+ ================
+  lines of function code: 70
+  lines of code text:     93
+  cyclomatic complexity:  14
+
+  03/26/2014  07:34:12 PM      9383  TextCompWrapper_i.h
+ ==================================================
+   cyclo lines function name
+  - type:   typedef interface ITextCompCOM ITextCompCOM 
+  - type:   typedef class TextCompCOM TextCompCOM 
+  - type:   typedef struct TextCompCOM TextCompCOM 
+     1    23   MIDL_INTERFACE
+  - type:   typedef struct ITextCompCOMVtbl 
+  - type:   interface ITextCompCOM 
+
+  module summary:
+ ================
+  lines of function code: 23
+  lines of code text:     295
+  cyclomatic complexity:  1
+
+  03/16/2014  02:11:23 AM       337  xdlldata.h     
+ ==================================================
+   cyclo lines function name
+
+  module summary:
+ ================
+  lines of function code: 0
+  lines of code text:     15
+  cyclomatic complexity:  0
+
+ =================================================
+          summary statistics - all files:
+ =================================================
+
+[   36,  259] - total cyclo, total function lines
+[    5,   50] - max cyclo, max function lines (excludes mains)
+    0.138996  - complexity per line
+         730  - total lines
+
+  global data declarations: 
+ ---------------------------
+  CTextCompWrapperModule _AtlModule; 
+  extern class CTextCompWrapperModule _AtlModule; 
+
+

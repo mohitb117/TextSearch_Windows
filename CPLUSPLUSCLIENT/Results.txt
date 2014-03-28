@@ -1,0 +1,42 @@
+
+        ANAL, v1.8 - Code Analysis Program
+  ----------------------------------------------
+       copyright (c) Jim Fawcett, 1992-2011
+           all rights granted to users
+             except right to publish
+
+
+  file path:
+  C:\Users\Varun\Desktop\DistributedObjects\TextFinderProject\CPLUSPLUSCLIENT
+
+
+  03/26/2014  07:26:44 PM      4596  CPPClient_TextFinder.cpp
+ ==================================================
+   cyclo lines function name
+     2     7   bool2String
+     1     8   convertBSTR2stdSTR
+     1     4   convertstdSTR2BSTR
+     2    12   convertVector2CCOMSafeArray
+     2    11   displayCCOMBSTRFiles
+     7   102   main
+
+  module summary:
+ ================
+  lines of function code: 144
+  lines of code text:     169
+  cyclomatic complexity:  15
+
+ =================================================
+          summary statistics - all files:
+ =================================================
+
+[   15,  144] - total cyclo, total function lines
+[    2,   12] - max cyclo, max function lines (excludes mains)
+    0.104167  - complexity per line
+         169  - total lines
+
+  functions exceeding cc or line limits: 
+ ----------------------------------------
+     7   102   cppclient_textfinder.cpp : main
+
+
