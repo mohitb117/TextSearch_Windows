@@ -34,7 +34,7 @@ CPLUSPLUSCLIENT ==> This project interfaces with the COM wrapper generated
 
 		    Generates==>	CPLUSPLUSCLIENT.exe
 
-=========================HOW TO BUILD================================================
+=========================HOW TO BUILD====================================
 
 1 . Execute Batch file BuildSolution.bat
 
@@ -49,9 +49,9 @@ CPLUSPLUSCLIENT ==> This project interfaces with the COM wrapper generated
 (Outputs will be generated as seperate files within the scripts folder.)
 
 
----------------------------------------------------------------------------------
+------------------------------------------------------------------------
 Please Note the only reason why I had to split scripts 
-was due to some situation due o threading constructs in the project acquiring locks 
+was due to some situation due to threading constructs in the project acquiring locks 
 while searching files and cascaded scripts would sometimes get stuck.
 (Thats my working theory!)
 ---------------------------------------------------------------------------------
